@@ -1,0 +1,112 @@
+EmitterLife = 1.5
+SpawnLocal = 1
+[Emitter]
+Texture = particles/tentacleexplode
+Shape = Point
+Width = 16
+Height = 32
+Life = 2.5
+RandomVelocityMagnitude = 333
+RandomRotationRange = 360
+RandomSpawnRadiusRange = 50
+[Number]
+0 6
+[Alpha]
+0 0
+0.1 1.0
+0.8 1.0
+1.0 0
+[Scale]
+0 .5 .5
+1 16 16
+[Rotation]
+0 0 
+1.0 360
+[Emitter]
+Texture = Particles/redpuff
+Shape = Point
+Blend = Add
+Width = 64
+Height = 64
+Life = 1
+RandomVelocityMagnitude = 100
+RandomRotationRange = 360
+[Number]
+0 15
+[Color]
+0 1 0.5 0.5
+1 1 0 0
+[Alpha]
+0 0
+0.1 0.5
+0.7 0.38
+1.0 0
+[Scale]
+0 1 1
+0.2 3 3
+1 35 35
+[Emitter]
+Texture = Particles/Sparkle
+Shape = Point
+Blend = Add
+Width = 64
+Height = 64
+Life = 1
+RandomVelocityMagnitude = 111
+RandomRotationRange = 360
+[Number]
+0 10
+[Color]
+0 1 .5 .5 
+[Alpha]
+0 1
+0.5 1
+0.8 0.7
+1.0 0
+[Scale]
+0 0.4 0.4
+0.1 2 2
+1.0 30 30
+[Emitter]
+Texture = Particles/Sparkle
+Shape = Point
+Blend = Add
+Width = 64
+Height = 64
+Life = 1
+RandomVelocityMagnitude = 111
+RandomRotationRange = 360
+[Number]
+0 20
+[Color]
+0 0 0 1 
+[Alpha]
+0 1
+0.5 1
+0.8 0.7
+1.0 0
+[Scale]
+0 0.2 0.2
+0.1 2 2
+1.0 10 10
+[Emitter]
+Texture = Particles/cloud
+Shape = Point
+Width = 64
+Height = 64
+Life = 1
+RandomVelocityMagnitude = 400
+RandomRotationRange = 360
+[Number]
+0 20
+[Color]
+0 0 0 0.5
+1 0 0 0
+[Alpha]
+0 0
+0.1 0.3
+0.7 0.3
+1.0 0
+[Scale]
+0 5 5
+1 10 10

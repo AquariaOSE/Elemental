@@ -1,0 +1,15 @@
+Texture = particles/Mithala-Shot-0002
+BlendType = BLEND_ADD
+HitPrt = pistolshrimp-fire
+TrailPrt = pistolshrimp-trail
+HitSfx = EnergyBlastHit
+FireSfx = pistolshrimp-fire
+FirePrt = pistolshrimp-fire
+CollideRadius = 24
+Damage = 2.5
+MaxSpeed = 1700
+Homing = 0
+Scale = 0.4 0.4
+Spin = 2345
+AvatarKickBack = 800
+AvatarKickBackTime = 0.5

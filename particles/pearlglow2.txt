@@ -1,0 +1,42 @@
+EmitterUpdateCull = 2000
+[Emitter]
+SpawnLocal = 1
+Texture = Particles/pearlglow2
+Shape = Point
+Blend = Add
+Width = 64
+Height = 64
+Life = 2
+RandomRotationRange = 360
+RandomSpawnRadiusRange = 20
+[Number]
+0 1
+[Color]
+0 .1 .1 .1
+[Alpha]
+0 0
+0.05 4
+1.0 0
+[Scale]
+0 1.5 1.5 
+.5 3 3 
+1 1.5 1.5 
+[Emitter]
+Texture = Particles/pearllines
+Shape = Point
+Blend = Add
+Width = 64
+Height = 64
+Life = 1.0
+RandomRotationRange = 360
+[Number]
+0 4
+[Color]
+0 1 1 1
+[Alpha]
+0 0
+0.3 .3
+1.0 
+[Scale]
+0 2 2
+1 4 4 

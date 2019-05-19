@@ -1,0 +1,6 @@
+<AnimationLayers>
+    <AnimationLayer />
+</AnimationLayers>
+<Bones>
+    <Bone idx="0" gfx="MetalKrinkut/MetalKrinkut" pidx="-1" name="Body" fh="0" fv="0" gc="1" cr="0" cp="0 0" />
+</Bones>

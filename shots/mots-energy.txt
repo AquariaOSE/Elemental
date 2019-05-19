@@ -1,0 +1,12 @@
+Texture = Shots/mots-energy
+HitPrt = mots-energyhit
+TrailPrt = mots-energytrail
+HitSfx = EnergyBlastHit
+FireSfx = shockwave
+Damage = 4
+MaxSpeed = 1000
+Homing = 2999
+Scale = 3 3
+Spin = 1234
+CollideRadius = 64
+Life = 1000000

@@ -1,0 +1,50 @@
+EmitterLife = 0.4
+[Emitter]
+Texture = Particles/Zaps
+Shape = Point
+Blend = Add
+Width = 64
+Height = 64
+Life = 0.76
+RandomRotationRange = 360
+JustOne = 1
+[Color]
+0 1 1 1
+0.2 1 0.7 0.5
+0.7 1 0.7 0.5
+1 1 0 0
+[Alpha]
+0 0.1
+0.1 0.75
+1.0 0
+[Scale]
+0 0.1 0.1
+0.1 1 1
+1 1.6 1.6
+[Emitter]
+Texture = Particles/Ring
+Shape = Point
+Blend = Add
+Width = 32
+Height = 32
+Life = 0.8
+RandomSpawnRadiusRange = 70
+RandomVelocityMagnitude = 26
+RandomRotationRange = 360
+GroupRender = 1
+[Number]
+0 34
+[Alpha]
+0 1
+0.1 0.6
+0.5 0.5
+1.0 0
+[Color]
+0 1 1 1
+0.2 1 0.7 0.5
+0.7 1 0.7 0.5
+1 1 0 0
+[Scale]
+0 3.4 3.4
+0.1 1.23 1.23
+1 0 0

@@ -1,0 +1,161 @@
+0 crate
+1 forest-rock-0001 128 128
+2 forest-rock-0002 128 128
+3 strangerock2 128 128
+4 strangerock4 128 128
+5 forest-bg-rep-0001
+6 forest-bg-rock-0001
+7 forest-bg-rock-0002
+8 egg
+9 embryo
+10 globe
+11 bg-light-0001
+12 grass-bed-0001
+13 grass-bed-0002
+14 grass-rock-0001
+15 grass-rock-0001
+16 grass-tile-0001
+17 grass-tile-0002
+18 forest-bg-rock-0003
+19 forest-bg-rock-0004
+20 egghatched
+21 seaweed-stalk
+22 seaweed-leaf
+23 darkness-0001
+24 darkness-0002
+25 darkness-0003
+26 darkness-0004
+27 memory-crystal-0002
+28 bg-rock-rep-0006
+29 bg-light-0003
+30 dark-full
+31 dark-partial
+32 bactred
+33 bactgreen
+34 bubbleplant
+35 strangewilted
+36 strangerock4big
+37 hanging-moss-0001
+38 strangeplant1
+39 strangeplant3
+40 audreystem2
+41 podyellowdoor
+42 podyellowtop
+43 backgdtadpole2
+44 algaefiliment
+45 spirit-crystal-0001
+46 glow-blue
+47 volvoxtwo
+48 audreydewdrops
+49 audreynewbowl
+50 ambient-blue
+51 forest-bg-rock-0005
+52 paramecium
+53 greenmazeplant
+54 greenmazeplantbend
+55 greenmazeplantbud
+56 podgreen
+57 podgreendoor
+58 podpurpledoor
+59 podstem
+60 podobstruct
+61 podred
+62 podyellow
+63 amoeba2
+64 algae
+65 volvox
+66 volvoxfaint
+67 algae3dsolid
+68 audrey2
+69 audreystem
+70 podreddoor
+71 audreyobstruct
+72 algaebg
+73 algae3d
+74 podinside
+75 podinsidedoor
+76 algae3d2
+77 podinside2
+78 podinside3
+79 podinside4
+80 globecopy
+81 audrey 
+82 greentendrils
+83 backgdsq5
+84 reed
+85 reedtop
+86 amoeba3
+87 strangebg
+88 spirobg
+89 sun-bubble
+90 underwater-light-0001
+91 ambient-blue
+92 testbed-04
+93 testbed-02
+94 naija-rock-0004
+95 bigcellboss2
+96 bkgdsquareblue
+97 greenmazeplant1
+98 greenmazeplantbud1
+99 greenmazeplantbend1
+100 tubeflower/body2
+
+
+
+
+
+
+
+
+
+
+
+101 Metal
+102 forest-bg-rep-0001
+103 forest-bg-rock-0001
+104 forest-bg-rock-0002
+105 kelp-0001
+106 kelp-bg-0001
+107 kelp-bg-0001
+108 bg-light-0001
+109 grass-bed-0001
+110 grass-bed-0002
+111 grass-rock-0001
+112 grass-rock-0001
+113 grass-tile-0001
+114 grass-tile-0002
+115 forest-bg-rock-0003
+116 forest-bg-rock-0004
+117 seaweed-bulb
+118 seaweed-stalk
+119 seaweed-leaf
+120 darkness-0001
+121 darkness-0002
+122 darkness-0003
+123 darkness-0004
+124 memory-crystal-0002
+125 bg-rock-rep-0006
+126 forest-statue-0001
+127 dark-full
+128 dark-partial
+129 spiny-vine-0001
+130 spiny-vine-0002
+131 heretic-skull-top
+132 heretic-skull-bottom
+133 forest-ruin-floor-rep
+134 hanging-moss-0001
+135 ship-bg-rep-0001
+136 crate-0001
+137 crate-0002
+138 ship-porthole-0001
+139 ship-plank-0001
+140 ship-plank-0002
+141 ship-mast-0001
+142 spirit-crystal-0001
+143 glow-blue
+144 tubeflower-leaf-0001
+145 tubeflower-leaf-0002
+146 dead-walker
+147 ambient-blue
+148 forest-bg-rock-0005
+149 healthplant-bush

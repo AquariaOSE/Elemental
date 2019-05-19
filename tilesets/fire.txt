@@ -1,0 +1,9 @@
+0 missing
+1 firerock02 128 128
+2 firerock02 128 128
+3 firerock04 128 128
+4 firerock04 128 128
+5 firerockbg
+6 latticeplantdark
+7 latticeplantred
+8 memory-crystal-0002

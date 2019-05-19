@@ -1,0 +1,18 @@
+<AnimationLayers>
+    <AnimationLayer />
+</AnimationLayers>
+<Bones>
+    <Bone idx="0" gfx="dragonfly/body" pidx="-1" name="" fh="0" fv="0" gc="1" cr="0" cp="0 0" />
+    <Bone idx="1" gfx="dragonfly/tail" pidx="0" name="" fh="0" fv="0" gc="1" cr="0" cp="0 0" rbp="1" />
+    <Bone idx="2" gfx="dragonfly/wing" pidx="0" name="wingfront1" fh="1" fv="0" gc="1" cr="0" cp="0 0" />
+    <Bone idx="3" gfx="dragonfly/wing" pidx="0" name="wingfront2" fh="1" fv="0" gc="1" cr="0" cp="0 0" />
+    <Bone idx="4" gfx="dragonfly/wing" pidx="0" name="wingback1" fh="0" fv="0" gc="1" cr="0" cp="0 0" rbp="1" sz="0.8 0.8" />
+    <Bone idx="5" gfx="dragonfly/wing" pidx="0" name="wingback2" fh="0" fv="0" gc="1" cr="0" cp="0 0" rbp="1" sz="0.8 0.8" />
+</Bones>
+<Animations>
+    <Animation name="idle">
+        <Key e="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 152 -46 0 0 2 7 -10 157 0 3 16 -20 -254 0 4 10 -16 95 0 5 12 -15 140 0 " />
+        <Key e="0.0500001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 152 -46 0 0 2 6 -11 122 0 3 21 -8 -180 0 4 10 -16 147 0 5 12 -15 169 0 " />
+        <Key e="0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 152 -46 0 0 2 7 -10 157 0 3 16 -20 -254 0 4 10 -16 95 0 5 12 -15 140 0 " />
+    </Animation>
+</Animations>

@@ -1,0 +1,13 @@
+Texture = Particles/PurpleFlare
+BlendType = BLEND_ADD
+HitPrt = RaspberryHit
+TrailPrt = RaspberryTrail
+HitSfx = EnergyBlastHit
+FireSfx = EnergyBlastFire
+CollideRadius = 16
+Damage = 1
+MaxSpeed = 440
+Homing = 200
+Scale = 0.85 0.85
+Spin = 1234
+SpawnEntity = trigger_raspberrydouble

@@ -1,0 +1,153 @@
+EmitterLife = 2
+SpawnLocal = 1
+[Emitter]
+Texture = Particles/Sparkle
+Shape = Point
+Blend = Add
+Width = 64
+Height = 64
+Life = 2.5
+RandomVelocityMagnitude = 111
+RandomRotationRange = 360
+[Number]
+0 26
+[Color]
+0 0 0 1 
+[Alpha]
+0 1
+0.5 1
+1.0 0
+[Scale]
+0 0.2 0.2
+0.1 2 2
+0.5 15 15
+1.0 20 20
+[Emitter]
+Texture = Particles/puffring
+Shape = Point
+Blend = Add
+Width = 64
+Height = 64
+Life = 1
+RandomRotationRange = 360
+[Number]
+0 10
+[Color]
+0 0 0 1
+.2 0 1 0
+.4 1 1 0
+.6 1 .5 0
+.8 1 0 0
+1 1 0 1
+[Alpha]
+0 0
+0.05 0.1
+0.9 0.5
+1.0 0
+[Scale]
+0 5 5
+1 50 50
+[Emitter]
+Texture = Particles/purplepuff
+Shape = Point
+Blend = Add
+Width = 96
+Height = 96
+Life = 1
+RandomVelocityMagnitude = 100
+RandomRotationRange = 360
+[Number]
+0 10
+[Color]
+0 1 0.5 0.5
+1 1 0 0
+[Alpha]
+0 0
+0.1 0.4
+0.7 0.2
+1.0 0
+[Scale]
+0 5 5
+1 24 24
+[Emitter]
+Texture = Particles/cloud
+Shape = Point
+Blend = Add
+Width = 96
+Height = 96
+Life = 1
+RandomVelocityMagnitude = 100
+RandomRotationRange = 360
+[Number]
+0 2
+[Color]
+0 .5 .5 1
+1 1 0 0
+[Alpha]
+0 0
+0.5 0
+0.6 .1
+1.0 0
+[Scale]
+0 5 5
+0.5 5 5
+1 10 10
+[Emitter]
+Texture = Particles/ring
+Shape = Point
+Blend = Add
+Width = 96
+Height = 96
+Life = 0.8
+JustOne = 1
+[Number]
+0 1
+[Color]
+0 .5 .5 1
+1 1 0 0
+[Alpha]
+0 0
+0.05 0.5
+1.0 0
+[Scale]
+0 5 5
+1 50 50
+[Emitter]
+Texture = Particles/LinePart
+Shape = Point
+Blend = Add
+Width = 32
+Height = 128
+Life = 1.5
+RandomRotationRange = 360
+JustOne = 18
+SpawnTimeOffset = 0.4
+[Color]
+0 1 1 1
+[Alpha]
+0 0
+0.2 0.5
+0.9 0.1
+1.0 0
+[Scale]
+0 1 1
+0.6 1 20
+1 1 23
+[Emitter]
+Texture = Particles/Glow
+Shape = Point
+Blend = Add
+Width = 96
+Height = 96
+Life = 3
+JustOne = 1
+[Color]
+0 1 0.1 0.2
+[Alpha]
+0 0
+0.05 0.6
+0.8 0.3
+1.0 0
+[Scale]
+0 5 5
+1 20 20

@@ -1,0 +1,11 @@
+Texture = Shots/spine-poisoninf
+BlendType = BLEND_DEFAULT
+HitPrt = poisonbubbles
+HitSfx = SpineHit
+TrailPrt = viruspoisontrail
+Damage = 0
+MaxSpeed = 425
+Homing = 1000000
+DamageType = DT_ENEMY_POISON
+EffectTime = 1000000
+Life = 60

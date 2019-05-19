@@ -1,0 +1,30 @@
+<AnimationLayers>
+    <AnimationLayer />
+</AnimationLayers>
+<Bones>
+    <Bone idx="0" gfx="bigcellboss/body" pidx="-1" name="Body" fh="0" fv="0" gc="1" cr="0" cp="0 0" />
+    <Bone idx="1" gfx="bigcellboss/backrim" pidx="0" name="" fh="0" fv="0" gc="1" cr="0" cp="0 0" rbp="1" />
+    <Bone idx="2" gfx="bigcellboss/snout" pidx="0" name="" fh="0" fv="0" gc="1" cr="0" cp="0 0" rbp="1" />
+    <Bone idx="3" gfx="missingimage" pidx="0" name="suckpoint" fh="0" fv="0" gc="0" cr="0" rq="0" cp="0 0" prt="0 bigsuck2" />
+    <Bone idx="4" gfx="missingimage" pidx="0" name="vacpoint" fh="0" fv="0" gc="0" cr="0" rq="0" cp="0 0" />
+    <Bone idx="5" gfx="bigcellboss/neck" pidx="0" name="" fh="0" fv="0" gc="0" cr="0" cp="0 0" rbp="1" sz="1.01 1.01" />
+    <Bone idx="10" gfx="bigcellboss/stitches" pidx="0" name="" fh="0" fv="0" gc="0" cr="0" cp="0 0" />
+    <Bone idx="11" gfx="bigcellboss/stitches" pidx="0" name="" fh="0" fv="0" gc="0" cr="0" cp="0 0" />
+    <Bone idx="12" gfx="bigcellboss/stitches" pidx="0" name="" fh="0" fv="0" gc="0" cr="0" cp="0 0" />
+    <Bone idx="13" gfx="bigcellboss/stitches" pidx="0" name="" fh="0" fv="0" gc="0" cr="0" cp="0 0" />
+    <Bone idx="14" gfx="bigcellboss/stitches-big" pidx="0" name="" fh="1" fv="0" gc="0" cr="0" cp="0 0" />
+    <Bone idx="15" gfx="bigcellboss/stitches-big" pidx="0" name="" fh="0" fv="0" gc="0" cr="0" cp="0 0" />
+    <Bone idx="16" gfx="bigcellboss/stitches-big" pidx="0" name="" fh="0" fv="0" gc="0" cr="0" cp="0 0" />
+</Bones>
+<Animations>
+    <Animation name="idle">
+        <Key cmd="3 AC_PRT_STOP 0" lerp="1" e="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 -4 -354 0 0 2 -13 -303 0 0 3 -6 -466 -87 0 10 -193 219 60 0 11 241 148 -38 0 12 -223 -56 187 0 13 -24 -7 90 0 14 -155 119 199 0 15 99 128 -223 0 16 -2 184 89 0 17 0 0 0 0 18 0 0 0 0 19 -99 132 0 0 20 199 -3 -28 0 4 -4 150 0 0 5 5 -226 0 0 " />
+        <Key lerp="1" e="3.4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 -4 -354 0 0 2 -12 -286 0 0 3 -6 -466 -87 0 10 -193 219 60 0 11 241 148 -38 0 12 -223 -56 187 0 13 -24 -7 90 0 14 -155 119 199 0 15 99 128 -223 0 16 -2 184 89 0 17 0 0 0 0 18 0 0 0 0 19 0 0 0 0 20 0 0 0 0 4 -4 150 0 0 5 5 -226 0 0 " />
+        <Key lerp="1" e="6.8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 -4 -354 0 0 2 -13 -303 0 0 3 -6 -466 -87 0 10 -193 219 60 0 11 241 148 -38 0 12 -223 -56 187 0 13 -24 -7 90 0 14 -155 119 199 0 15 99 128 -223 0 16 -2 184 89 0 17 0 0 0 0 18 0 0 0 0 19 0 0 0 0 20 0 0 0 0 4 -4 150 0 0 5 5 -226 0 0 " />
+    </Animation>
+    <Animation name="suck">
+        <Key cmd="3 AC_PRT_START 0" lerp="1" e="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 -4 -354 0 0 2 -10 -333 0 0 3 -10 -468 -88 0 10 -193 219 60 0 11 241 148 -38 0 12 -223 -56 187 0 13 -24 -7 90 0 14 -155 119 199 0 15 99 128 -223 0 16 -2 184 89 0 17 0 0 0 0 18 0 0 0 0 19 0 0 0 0 20 0 0 0 0 4 -6 154 0 0 5 5 -226 0 0 " />
+        <Key lerp="1" e="0.38 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 -4 -354 0 0 2 -9 -406 0 0 3 -10 -468 -88 0 10 -193 219 60 0 11 241 148 -38 0 12 -223 -56 187 0 13 -24 -7 90 0 14 -155 119 199 0 15 99 128 -223 0 16 -2 184 89 0 17 0 0 0 0 18 0 0 0 0 19 0 0 0 0 20 0 0 0 0 4 -6 154 0 0 5 5 -226 0 0 " />
+        <Key lerp="1" e="0.7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 -4 -354 0 0 2 -10 -333 0 0 3 -10 -468 -88 0 10 -193 219 60 0 11 241 148 -38 0 12 -223 -56 187 0 13 -24 -7 90 0 14 -155 119 199 0 15 99 128 -223 0 16 -2 184 89 0 17 0 0 0 0 18 0 0 0 0 19 0 0 0 0 20 0 0 0 0 4 -6 154 0 0 5 5 -226 0 0 " />
+    </Animation>
+</Animations>

@@ -1,0 +1,41 @@
+[Emitter]
+Texture = particles/ring3
+Shape = Point
+Blend = Add
+Width = 200
+Height = 200
+Life = 3		
+RandomRotationRange = 360
+JustOne = 1
+[Number]
+0 20	
+[Color]
+0 0.5 1 1
+[Alpha]
+0 0
+0.05 2
+1.0 0
+[Scale]
+0 1 1
+1 10 10
+[Emitter]
+Texture = particles/purplepuff
+Shape = Point
+Blend = Add
+Width = 200
+Height = 200
+Life = 2
+RandomRotationRange = 360
+JustOne = 1
+[Number]
+0 1			 
+[Color]
+0 1 0.7 0.5
+[Alpha]
+0 0
+0.55 .5
+1.0 0
+[Scale]
+0 1 1
+0.2 3 3
+1 5 5

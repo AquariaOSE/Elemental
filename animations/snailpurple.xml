@@ -1,0 +1,22 @@
+<AnimationLayers>
+    <AnimationLayer />
+</AnimationLayers>
+<Bones>
+    <Bone idx="0" gfx="snailpurple/snail" pidx="-1" name="snail" fh="0" fv="0" gc="1" cr="0" cp="0 0" />
+    <Bone idx="1" gfx="snailpurple/shell" pidx="0" name="" fh="0" fv="0" gc="1" cr="0" cp="0 0" />
+    <Bone idx="3" gfx="snailpurple/trumpet" pidx="0" name="" fh="0" fv="0" gc="1" cr="0" cp="0 0" rbp="1" prt="0 SnailGearExhaust" />
+    <Bone idx="2" gfx="snailpurple/gear" pidx="0" name="" fh="0" fv="0" gc="1" cr="0" cp="0 0" rbp="1" />
+</Bones>
+<Animations>
+    <Animation name="idle">
+        <Key cmd="3 AC_PRT_STOP 0" e="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 -20 -4 0 0 3 -40 20 0 0 2 -31 4 0 0 " />
+        <Key e="1.4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 -20 -4 0 0 3 -40 20 0 0 2 -31 4 360 0 " />
+    </Animation>
+    <Animation name="jump">
+        <Key e="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 -20 -4 0 0 3 -44 16 0 0 2 -31 4 0 0 " />
+        <Key cmd="3 AC_PRT_START 0" e="0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 -20 -4 -19 0 3 -31 8 -16 0 2 -21 0 0 0 " />
+        <Key e="0.3 0 0 0 -24 0 0 0 0 0 0 0 0 0 0 0 1 -20 -4 2 0 3 -41 15 -1 0 2 -21 0 0 0 " />
+        <Key e="2.5 0 0 0 -41 0 0 0 0 0 0 0 0 0 0 0 1 -21 -3 2 0 3 -53 21 -1 0 2 -21 0 0 0 " />
+		<Key cmd="3 AC_PRT_STOP 0" e="2.6 0 0 0 -41 0 0 0 0 0 0 0 0 0 0 0 1 -21 -3 2 0 3 -53 21 -1 0 2 -21 0 0 0 " />
+    </Animation>
+</Animations>

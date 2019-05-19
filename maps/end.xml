@@ -1,0 +1,12 @@
+<Level tileset="Final" waterLevel="0" bgSfxLoop="" gradTop="0 0 0" gradBtm="0 0 0" gradient="1" parallax="0.5 0.55 0.6" music="licave" sceneColor="0 0 0" />
+<Obs d="" />
+<Path name="naijastart">
+    <Node pos="3886 3592" rect="64 64" shape="0" />
+</Path>
+<Path name="mm_flagmap">
+    <Node pos="0 0" rect="64 64" shape="0" />
+</Path>
+<Path name="ends">
+    <Node pos="3835 3572" rect="32980 24568" shape="0" />
+</Path>
+<SE k="58 3879 4632 0 0.65 0.65 0 0 0 -1 0 " l="13" />

@@ -1,0 +1,64 @@
+EmitterLife = 0.5
+[Emitter]
+Texture = Particles/Sparkle
+Shape = Point
+Blend = Add
+Width = 64
+Height = 64
+Life = 0.8
+RandomVelocityMagnitude = 400
+RandomRotationRange = 360
+[Number]
+0 80
+[Color]
+0 1 1 1
+[Alpha]
+0 0
+0.1 1.0
+0.5 0.9
+1.0 0
+[Scale]
+0 1 1
+0.2 1 1
+1 2 2
+[Emitter]
+Texture = Particles/Cloud
+Shape = Point
+Blend = Add
+Width = 96
+Height = 96
+Life = 1
+RandomVelocityMagnitude = 200
+RandomRotationRange = 360
+[Number]
+0 50
+[Color]
+0   0.5 0.6 1.0
+0.5 0.5 0.5 1.0 
+1   0.5 0.5 0.5
+[Alpha]
+0 0
+0.1 0.3
+1.0 0
+[Scale]
+0 1 1
+0.2 1 1
+1 5 5
+[Emitter]
+Texture = Particles/Ring
+Shape = Point
+Blend = Add
+Width = 128
+Height = 128
+Life = 1
+RandomRotationRange = 360
+JustOne = 1
+[Color]
+0 1 1 1
+[Alpha]
+0 0
+0.05 0.5
+1.0 0
+[Scale]
+0 1 1
+1 10 10

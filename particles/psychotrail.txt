@@ -1,0 +1,27 @@
+[Emitter]
+Texture = Shots/BouncyBall
+Shape = Point
+Width = 70
+Height = 70
+Life = 0.6
+RandomRotationRange = 360
+RandomVelocityMagnitude = 10
+[Number]
+0 100
+[Alpha]
+0 0
+0.05 1.0
+0.5 1.0
+1.0 0
+[Scale]
+0 1 1
+1 0.5 0.5
+[Color]
+0.1 1   0    0
+0.2 0.5 0.75 0.1
+0.3 0   0.5  0.5
+0.4 0   1    0.9
+0.5 0   0    1
+0.6 0.3 0.75 0.1
+0.7 0.6 0.5  0.5
+1   1   0   0.9

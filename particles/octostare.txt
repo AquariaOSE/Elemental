@@ -1,0 +1,41 @@
+[Emitter]
+SpawnLocal = 1
+Texture = particles/octopusaura-add2
+Shape = Point
+Blend = Add
+Width = 40
+Height = 40
+Life = 1
+RandomRotationRange = 360
+[Number]
+0 5
+[Color]
+0 0.5 .5 1
+[Alpha]
+0 0
+0.05 .50
+1.0 0
+[Scale]
+0 1 1
+1 10 10
+[Emitter]
+Texture = Particles/purplepuff
+Shape = Point
+Blend = Add
+Width = 100
+Height = 100
+Life = 1
+RandomVelocityMagnitude = 50
+RandomRotationRange = 360
+[Number]
+0 4 
+[Color]
+0 1 0.7 0.5
+[Alpha]
+0 0
+0.55 0.15
+1.0 0
+[Scale]
+0 1 1
+0.2 3 3
+1 5 5

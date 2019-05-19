@@ -1,0 +1,16 @@
+Texture = Shots/NewtBlast
+BlendType = BLEND_ADD
+BounceType = BOUNCE_NONE
+TrailPrt = PurpleSeaDragonTrail-mini
+HitPrt = PurpleSeaDragonHit-mini
+HitSfx = EnergyBlastHit
+Damage = 1
+MaxSpeed = 600
+Homing = 0
+Scale = 1 1
+LifeTime = 2
+Scale = 0.64 0.64
+Spin = 3210
+Life = 2.5
+Invisible = 1
+CollideRadius = 5

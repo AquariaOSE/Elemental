@@ -1,0 +1,48 @@
+
+EmitterUpdateCull = 3000
+[Emitter]
+Texture = fire2
+Shape = Point
+Blend = Add
+Width = 128
+Height = 128
+Life = 3
+RandomScale = 1 1.5 
+RandomAlphaMod = .02 .06
+Initial Velocity = 0 -200
+Gravity = 0 -100		
+[Number]
+0 15	
+[Alpha]
+0 0
+0.05 .04
+1.0 .07
+[Scale]
+0 0 0
+0.05 2 1.5
+1.0 5 4
+[Emitter]
+Texture = fire3
+Shape = Point
+Blend = Add
+Width = 128
+Height = 128
+Life = 3
+RandomScale = 1 1.5
+RandomAlphaMod = .02 .06
+Initial Velocity = 0 -200
+Gravity = 0 -100  		
+[Number]
+0 15	
+[Alpha]
+0 0
+0.05 .04
+1.0 .07
+[Scale]
+0 0 0
+0.05 2 1.5
+1.0 5 4
+[Rotation]
+0 0 
+.05 15
+1 0

@@ -1,0 +1,13 @@
+Texture = Shots/hotenergy
+BounceType = BOUNCE_REAL
+BlendType = BLEND_ADD
+HitPrt = megabombhit
+HitSfx = EnergyBlastHit
+FireSfx = BlasterFire
+TrailPrt = megabombtrail
+Damage = 1
+MaxSpeed = 1030
+Scale = 1 1
+CollideRadius = 33
+Life = 16
+IgnoreShield = 0

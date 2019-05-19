@@ -1,0 +1,43 @@
+[Emitter]
+Texture = Particles/gas
+Blend = Add
+Shape = Point
+Width = 96
+Height = 96
+Life = 2
+RandomRotationRange = 360
+RandomVelocityRange = 360
+Gravity = 0 -15
+SpawnLocal = 1
+[Number]
+0 2
+[Color]
+0 0.2 1 0.5
+[Alpha]
+0 0
+0.2 0.18
+1.0 0
+[Scale]
+0 5 5
+1 6 6
+[Emitter]
+Texture = Particles/Bubble
+Shape = Point
+Blend = Add
+Width = 32
+Height = 32
+Life = 2
+RandomScale = 0.5 1.5
+RandomVelocityMagnitude = 10
+RandomRotationRange = 360
+RandomSpawnRadiusRange = 200
+Gravity = 0 -20
+SpawnLocal = 1
+[Number]
+0 20
+[Alpha]
+0 0
+0.25 0.48
+1.0 0.0
+[Color]
+0 0.2 1 0.2

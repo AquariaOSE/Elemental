@@ -1,0 +1,22 @@
+EmitterUpdateCull = 2000
+EmitterLife = 3
+[Emitter]
+Texture = Particles/Spark
+Shape = Point
+Blend = Add
+Width = 32
+Height = 32
+Life = 2.0
+RandomRotationRange = 360
+RandomSpawnRadiusRange = 120
+[Number]
+0 8
+[Color]
+0 1 1 1
+[Alpha]
+0 0
+0.3 1
+1.0 0
+[Scale]
+0 1 1
+1 1.2 1.2

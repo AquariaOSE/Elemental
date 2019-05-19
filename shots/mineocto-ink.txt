@@ -1,0 +1,12 @@
+BounceType = BOUNCE_REAL
+BounceSfx = BBBounce
+Invisible = 1
+DamageType = DT_ENEMY_INK
+HitPrt = InkExplode
+TrailPrt = InkBlot
+Damage = 0
+MaxSpeed = 800
+CollideRadius = 20
+EffectTime = 8
+FireSfx = ink
+Life = 20

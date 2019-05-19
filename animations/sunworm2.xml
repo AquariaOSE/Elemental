@@ -1,0 +1,27 @@
+<AnimationLayers>
+    <AnimationLayer />
+    <AnimationLayer ignore="0 2 3 " />
+</AnimationLayers>
+<Bones>
+    <Bone idx="1" gfx="SunWorm2/Jaw" pidx="0" name="Jaw" fh="0" fv="0" gc="1" cr="0" cp="0 0" rbp="1" prt="0 SunWormSuck 1 SunWormBlow"/>
+    <Bone idx="0" gfx="SunWorm2/Head" pidx="-1" name="Head" fh="0" fv="0" gc="1" cr="0" cp="0 0"/>
+    <Bone idx="2" gfx="SunWorm2/Antenna" pidx="0" name="Jaw" fh="0" fv="0" gc="1" cr="0" cp="0 0" />
+    <Bone idx="3" gfx="SunWorm2/Antenna" pidx="0" name="Jaw" fh="1" fv="0" gc="1" cr="0" cp="0 0" />
+</Bones>
+<Animations>
+    <Animation name="idle">
+        <Key cmd="1 AC_PRT_STOP 0 1 AC_PRT_STOP 1" d="0 0 0 0 180 0 0 0 0 0 0 0 0 0 0 0 0 1 1 74 0 2 -83 67 0 3 82 67 0 " />
+        <Key d="0.3 0 0 0 180 0 0 0 0 0 0 0 0 0 0 0 0 1 1 79 0 2 -83 67 0 3 82 67 0 " />
+        <Key d="0.6 0 0 0 180 0 0 0 0 0 0 0 0 0 0 0 0 1 1 74 0 2 -83 67 0 3 82 67 0 " />
+    </Animation>
+    <Animation name="suck">
+        <Key cmd="1 AC_PRT_START 0 1 AC_PRT_STOP 1" d="0 0 0 0 180 0 0 0 0 0 0 0 0 0 0 0 0 1 1 102 0 2 -83 67 0 3 82 67 0 " />
+        <Key d="0.6 0 0 0 180 0 0 0 0 0 0 0 0 0 0 0 0 1 2 106 0 2 -83 67 0 3 82 67 0 " />
+        <Key d="1.2 0 0 0 180 0 0 0 0 0 0 0 0 0 0 0 0 1 1 102 0 2 -83 67 0 3 82 67 0 " />
+    </Animation>
+    <Animation name="blow">
+        <Key cmd="1 AC_PRT_STOP 0 1 AC_PRT_START 1" d="0 0 0 0 180 0 0 0 0 0 0 0 0 0 0 0 0 1 2 94 0 2 -83 67 0 3 82 67 0 " />
+        <Key d="0.1 0 0 0 180 0 0 0 0 0 0 0 0 0 0 0 0 1 1 79 0 2 -83 67 0 3 82 67 0 " />
+        <Key d="0.2 0 0 0 180 0 0 0 0 0 0 0 0 0 0 0 0 1 2 94 0 2 -83 67 0 3 82 67 0 " />
+    </Animation>
+</Animations>

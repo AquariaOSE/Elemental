@@ -1,0 +1,103 @@
+:BouncyBall
+Shot = BouncyBall
+AmmoUnitSize = 10
+
+:Jelly
+Health = 1.5
+
+:Blaster
+Shot = BlasterFire
+AmmoUnitSize = 5
+
+:Moneye
+Shot = Moneye
+
+:MoneyeBreeder
+Shot = Moneye
+AmmoUnitSize = 8
+
+:Ink
+Shot = Ink
+AmmoUnitSize = 10
+
+:SchoolFish
+Health = 0.1
+
+:Loper
+Shot = Loper
+AmmoUnitSize = 12
+
+:HotEnergy
+Shot = HotEnergy
+
+:ZygoteShot
+Shot = ZygoteShot
+AmmoUnitSize = 1
+
+:Orbiter
+Shot = Orbiter
+AmmoUnitSize = 6
+
+:PistolShrimp
+Shot = avatar_pistolshrimp
+AmmoUnitSize = 6
+Health = 1.5
+
+:Starmie
+Health = 1
+Shot = StarFire
+AmmoUnitSize = 18
+
+:MiniFood
+Health = 0.1
+
+:SmallFood
+Health = 0.25
+
+:MediumFood
+Health = 1
+
+:LargeFood
+Health = 2
+
+:Raspberry
+Health = 0.25
+Shot = Raspberry
+AmmoUnitSize = 6
+
+:Poison
+Health = 0.25
+Shot = Poison
+AmmoUnitSize = 3
+
+:OriginalRaspberry
+Health = 0.5
+Shot = OriginalRaspberry
+AmmoUnitSize = 12
+
+:Blazer
+Health = 0.5
+Shot = DropShot
+AmmoUnitSize = 18
+
+:Wisker
+Shot = WiskerShot
+AmmoUnitSize = 6
+
+:SpicyShot
+Shot = SpicyShot
+AmmoUnitSize = 24
+
+:mots-energy
+Shot = mots-energy
+AmmoUnitSize = 50
+
+:FireKrinkut
+Shot = energytendril2
+AmmoUnitSize = 25
+
+:Cell04
+Shot = infpoison
+AmmoUnitSize = 40
+
+:

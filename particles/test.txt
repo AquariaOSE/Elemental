@@ -1,0 +1,20 @@
+EmitterLife = 0.1
+[Emitter]
+Texture = Particles/Bubble-01
+Shape = Point
+Width = 32
+Height = 32
+Life = 8
+RandomScale = 0.5 1.0
+RandomVelocityMagnitude = 5
+RandomRotationRange = 360
+RandomSpawnRadiusRange = 64
+Gravity = 0 -10
+Influenced = 16
+DeathPrt = Pop
+JustOne = 3
+InitialVelocity = 0 -40
+[Number]
+[Alpha]
+0 0
+0.1 1.0

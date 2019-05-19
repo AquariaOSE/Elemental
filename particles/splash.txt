@@ -1,0 +1,66 @@
+EmitterLife = 0.3
+[Emitter]
+Texture = Particles/WallBoost
+Shape = Point
+Blend = Add
+Width = 170
+Height = 170
+Life = 1.5
+RandomRotationRange = 0
+CopyParentRotation = 1
+[Number]
+0 20
+0.1 0
+1 0
+[Alpha]
+0 0
+0.05 0.6
+1.0 0
+[Scale]
+0 0.5 1
+1 4 0.5
+[Emitter]
+Texture = Particles/Sparkle
+Shape = Point
+Blend = Add
+Width = 64
+Height = 64
+Life = 0.8
+RandomVelocityMagnitude = 50
+RandomRotationRange = 360
+InitialVelocity = 0 -700
+Gravity = 0 2000
+[Number]
+0 50
+[Color]
+0 1 1 1
+[Alpha]
+0 1.0
+0.9 0.5
+1.0 0
+[Scale]
+0 3 3
+1 5 5
+[Emitter]
+Texture = Particles/Cloud
+Shape = Point
+Blend = Add
+Width = 128
+Height = 128
+Life = 0.5
+RandomVelocityMagnitude = 50
+RandomRotationRange = 360
+InitialVelocity = 0 -400
+JustOne = 1
+[Number]
+0 1
+[Color]
+0 0.9 0.9 0.9
+[Alpha]
+0 0
+0.1 0.3
+1.0 0
+[Scale]
+0 1 1
+0.2 1 1
+1 2 2

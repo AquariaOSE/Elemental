@@ -1,0 +1,137 @@
+EmitterLife = 5.0
+SpawnLocal = 1
+[Emitter]
+Texture = particles/amb-inc1
+Shape = Point
+Width = 32
+Height = 32
+Life = 1
+RandomVelocityMagnitude = 111
+RandomRotationRange = 360
+RandomSpawnRadiusRange = 600
+[Number]
+0 20
+[Alpha]
+0 0
+0.1 1.0
+0.5 1.0
+1.0 0
+[Scale]
+0 .5 .5
+1 4 4 
+[Rotation]
+0 0 
+1.0 360
+[Emitter]
+Texture = particles/amb-inc2
+Shape = Point
+Width = 32
+Height = 32
+Life = 1
+RandomVelocityMagnitude = 111
+RandomRotationRange = 360
+RandomSpawnRadiusRange = 600
+[Number]
+0 10
+[Alpha]
+0 0
+0.1 1.0
+0.5 1.0
+1.0 0
+[Scale]
+0 .8 .8
+1 6 6 
+[Rotation]
+0 0 
+1.0 180
+[Emitter]
+Texture = bigcellboss/mito
+Shape = Point
+Width = 32
+Height = 32
+Life = 1.2
+RandomVelocityMagnitude = 111
+RandomRotationRange = 360
+RandomSpawnRadiusRange = 600
+[Number]
+0 15
+[Alpha]
+0 0
+0.1 1.0
+0.5 1.0
+1.0 0
+[Scale]
+0 1 1
+1 8 8 
+[Rotation]
+0 0 
+1.0 900
+[Emitter]
+Texture = Particles/purplepuff
+Shape = Point
+Blend = Add
+Width = 96
+Height = 96
+Life = 1
+RandomVelocityMagnitude = 100
+RandomRotationRange = 360
+[Number]
+0 10
+[Color]
+0 1 0.5 0.5
+1 1 0 0
+[Alpha]
+0 0
+0.1 0.3
+0.7 0.2
+1.0 0
+[Scale]
+0 1 1
+0.2 1 1
+1 24 24
+[Emitter]
+Texture = bigcellboss/vacuole
+Shape = Point
+Width = 32
+Height = 32
+Life = 1
+RandomVelocityMagnitude = 111
+RandomRotationRange = 360
+RandomSpawnRadiusRange = 600
+[Number]
+0 5
+[Alpha]
+0 0
+0.1 .1
+0.5 .3
+1.0 0
+[Scale]
+0 2 2 
+1 8 8 
+[Rotation]
+0 0 
+1.0 360
+[Emitter]
+Texture = Particles/Sparkle
+Shape = Point
+Blend = Add
+Width = 64
+Height = 64
+Life = 1
+RandomVelocityMagnitude = 111
+RandomRotationRange = 360
+[Number]
+0 20
+[Color]
+0 1 1 0.5
+[Alpha]
+0 1
+0.5 1
+0.8 0.7
+1.0 0
+[Scale]
+0 0.8 0.8
+0.1 4 4
+1.0 16 16
+
+

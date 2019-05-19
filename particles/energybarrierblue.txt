@@ -1,0 +1,44 @@
+[Emitter]
+Texture = Bubble
+Shape = Point
+Blend = Add
+Width = 32
+Height = 32
+Life = 2
+RandomVelocityMagnitude = 80
+RandomRotationRange = 360
+InitialVelocity = 0 200
+Gravity = 0 -400
+[Number]
+0 10
+[Color]
+0 1 1 1
+[Alpha]
+0 0
+0.01 0.3
+0.5 0.2
+1.0 0
+[Scale]
+0 1 1
+0.2 1 1
+1 3 3
+[Emitter]
+Texture = Particles/Wake
+Shape = Point
+Blend = Add
+Width = 64
+Height = 64
+Life = 0.2
+RandomRotationRange = 360
+[Number]
+0 20
+[Color]
+0 0.9 0.9 1.0
+[Alpha]
+0 0
+0.01 0.8
+1.0 0
+[Scale]
+0 5 5
+0.2 5 5
+1 0 0

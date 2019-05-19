@@ -1,0 +1,70 @@
+EmitterLife = 0.21
+[Emitter]
+Texture = Particles/Ring
+Shape = Point
+Blend = Add
+Width = 48
+Height = 48
+Life = 1
+RandomRotationRange = 360
+JustOne = 1
+[Color]
+0 1 1 1
+[Alpha]
+0 0
+0.05 0.5
+1.0 0
+[Scale]
+0 0 0
+0.1 2 2
+1 20 20
+[Emitter]
+Texture = Particles/PurpleFlare
+Shape = Point
+Blend = Add
+Width = 64
+Height = 64
+Life = 0.8
+RandomScale = 2.4 3.2
+RandomVelocityMagnitude = 64
+RandomRotationRange = 360
+GroupRender = 1
+[Number]
+0 32
+[Alpha]
+0 1
+0.05 0.5
+0.5 0.5
+1.0 0
+[Color]
+0 0.7 0.8 0
+[Scale]
+0 4.6 4.6
+0.1 2 2
+0.5 2 2
+1 0 0
+[Emitter]
+Texture = Particles/spark
+Shape = Point
+Blend = Add
+Width = 128
+Height = 128
+Life = 0.23
+RandomVelocityMagnitude = 123
+RandomRotationRange = 360
+GroupRender = 1
+JustOne = 1
+[Alpha]
+0 1
+0.05 0.5
+0.5 0.5
+1.0 0
+[Color]
+0 1 1 1
+0.2 1 1 0.8
+1 1 0.8 0
+[Scale]
+0 6.8 6.8
+0.1 4 4
+0.5 2 2
+1 0 0

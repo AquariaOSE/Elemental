@@ -1,0 +1,8 @@
+0 missing
+1 Metal 192 192
+2 Metal 192 192
+3 Metal 192 192
+4 Metal 192 192
+5 Metalbg
+6 4elementsdoor
+7 memory-crystal-0002

@@ -1,0 +1,64 @@
+EmitterUpdateCull = 1300
+[Emitter]
+Blend = Add
+Texture = particles/blueglow
+Shape = Point
+Width = 20
+Height = 20
+Life = 5
+RandomAlphaMod = 0.2 1
+RandomSpawnRadiusRange = 128
+RandomVelocityMagnitude = 8
+AlphaModTimesVel = 1
+GroupRender = 1
+[Number]
+0 2
+[Alpha]
+0 0
+0.5 0.5
+1 0
+[Color]
+0 0.9 0.9 1
+[Emitter]
+Blend = Add
+Texture = particles/blueglow
+Shape = Point
+Width = 64
+Height = 64
+Life = 1.2
+[Number]
+0 20
+[Alpha]
+0 .005
+.5 .025
+1 .005
+[Scale]
+0 0 0
+.5 6 6
+0 0 0
+[Color]
+0 0.9 0.9 1
+[Emitter]
+Texture = particles/bluesparkle
+Shape = Point
+Blend = Add
+Width = 64
+Height = 64
+Life = 0.8
+RandomVelocityMagnitude = 100
+RandomRotationRange = 360
+[Number]
+0 40
+[Color]
+0 0.5 1 1
+[Alpha]
+0 0
+0.1 1.0
+0.5 0.9
+1.0 0
+[Scale]
+0 1 1
+0.2 1 1
+1 2 2
+
+

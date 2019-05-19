@@ -1,0 +1,33 @@
+<AnimationLayers>
+    <AnimationLayer />
+    <AnimationLayer ignore="0 2 3 " />
+</AnimationLayers>
+<Bones>
+    <Bone idx="0" gfx="purpledragon/body" pidx="-1" name="body" fh="0" fv="0" gc="1" cr="0" cp="0 0" />
+    <Bone idx="1" gfx="purpledragon/head" pidx="0" name="" fh="0" fv="0" gc="1" cr="0" cp="0 0" />
+    <Bone idx="2" gfx="purpledragon/weeds" pidx="0" name="weeds1" fh="0" fv="0" gc="1" cr="0" cp="0 0" />
+    <Bone idx="3" gfx="purpledragon/weeds" pidx="0" name="weeds2" fh="0" fv="0" gc="1" cr="0" cp="0 0" rbp="1" />
+    <Bone idx="4" gfx="MissingImage" pidx="-1" name="FireLoc" fh="0" fv="0" gc="0" cr="0" cp="0 0" />
+</Bones>
+<Animations>
+    <Animation name="idle">
+        <Key e="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 -105 -148 0 0 2 44 -56 0 0 3 36 -64 -18 0 4 -220 -104 -107 0 " />
+        <Key e="0.7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 -103 -145 0 0 2 44 -56 0 0 3 36 -64 -18 0 4 -215 -99 -107 0 " />
+        <Key e="1.5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 -105 -148 0 0 2 44 -56 0 0 3 36 -64 -18 0 4 -220 -104 -107 0 " />
+    </Animation>
+    <Animation name="attack">
+        <Key e="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 -113 -132 -57 0 2 45 -28 24 0 3 44 -41 12 0 4 -136 -6 -157 0 " />
+        <Key e="0.8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 -111 -134 2 0 2 45 -28 24 0 3 44 -41 12 0 4 -224 -92 -114 0 " />
+        <Key e="1.5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 -71 -129 59 0 2 44 -56 0 0 3 36 -64 -18 0 4 -172 -202 -56 0 " />
+    </Animation>
+    <Animation name="open">
+        <Key e="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 2 0 0 0 0 3 0 0 0 0 4 0 0 0 0 " />
+        <Key e="0.4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 2 0 0 0 0 3 0 0 0 0 4 0 0 0 0 " />
+        <Key e="0.8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 2 0 0 0 0 3 0 0 0 0 4 0 0 0 0 " />
+    </Animation>
+    <Animation name="close">
+        <Key e="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 2 0 0 0 0 3 0 0 0 0 4 0 0 0 0 " />
+        <Key e="0.4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 2 0 0 0 0 3 0 0 0 0 4 0 0 0 0 " />
+        <Key e="0.8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 2 0 0 0 0 3 0 0 0 0 4 0 0 0 0 " />
+    </Animation>
+</Animations>

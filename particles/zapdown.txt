@@ -1,0 +1,29 @@
+EmitterLife = 0.6
+[Emitter]
+Texture = Particles/Ring
+Shape = Point
+Blend = Add
+Width = 32
+Height = 32
+Life = 1
+RandomSpawnRadiusRange = 110
+RandomVelocityMagnitude = 64
+RandomRotationRange = 360
+GroupRender = 1
+Gravity = 0 1100
+[Number]
+0 50
+[Alpha]
+0 0
+0.2 0
+0.4 1
+0.7 0.5
+1.0 0
+[Color]
+0 1 0.7 0.5
+[Scale]
+0 0 0
+0.2 0 0
+0.4 3.4 3.4
+0.6 1.23 1.23
+1 0 0

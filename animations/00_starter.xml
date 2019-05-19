@@ -1,0 +1,11 @@
+<AnimationLayers>
+    <AnimationLayer />
+</AnimationLayers>
+<Bones>
+    <Bone idx="0" gfx="Core/Body" pidx="-1" name="Body" fh="0" fv="0" cr="0" cp="0 0" />
+</Bones>
+<Animations>
+    <Animation name="idle">
+        <Key d="0 0 0 0 0 0 0 0 0 0 " />
+    </Animation>
+</Animations>

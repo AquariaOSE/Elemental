@@ -1,0 +1,16 @@
+<AnimationLayers>
+    <AnimationLayer />
+</AnimationLayers>
+<Bones>
+    <Bone idx="0" gfx="blasterpurple/core" pidx="-1" name="body" fh="0" fv="0" gc="1" cr="0" cp="0 0" />
+    <Bone idx="1" gfx="blasterpurple/shell" pidx="0" name="" fh="0" fv="0" gc="1" cr="0" cp="0 0" />
+    <Bone idx="2" gfx="blasterpurple/shell" pidx="0" name="" fh="1" fv="0" gc="1" cr="0" cp="0 0" />
+</Bones>
+<Animations>
+    <Animation name="idle">
+        <Key e="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 -31 -11 -21 0 2 31 -12 19 0 " />
+        <Key lerp="1" e="0.6 0 0 6 0 0 0 0 0 0 0 0 0 0 0 0 1 -35 -6 0 0 2 38 -6 0 0 " />
+        <Key e="0.9 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 1 -26 -6 0 0 2 26 -6 0 0 " />
+        <Key lerp="2" e="1.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 -31 -11 -21 0 2 31 -12 19 0 " />
+    </Animation>
+</Animations>

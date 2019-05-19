@@ -1,0 +1,26 @@
+<AnimationLayers>
+    <AnimationLayer />
+</AnimationLayers>
+<Bones>
+    <Bone idx="0" gfx="mineoctoboss/head" pidx="-1" name="head" fh="0" fv="0" gc="1" cr="0" cp="0 0" />
+    <Bone idx="1" gfx="test/vector" pidx="0" name="fg1" fh="0" fv="0" gc="1" cr="0" cp="0 0" rbp="1" />
+    <Bone idx="2" gfx="test/vector" pidx="0" name="fg2" fh="0" fv="0" gc="1" cr="0" cp="0 0" rbp="1" />
+    <Bone idx="3" gfx="test/vector" pidx="0" name="fg3" fh="0" fv="0" gc="1" cr="0" cp="0 0" rbp="1" />
+    <Bone idx="4" gfx="test/vector" pidx="0" name="fg4" fh="0" fv="0" gc="1" cr="0" cp="0 0" rbp="1" />
+    <Bone idx="5" gfx="test/vector" pidx="0" name="bg1" fh="0" fv="0" gc="1" cr="0" cp="0 0" rbp="1" />
+    <Bone idx="6" gfx="test/vector" pidx="0" name="bg2" fh="0" fv="0" gc="1" cr="0" cp="0 0" rbp="1" />
+    <Bone idx="7" gfx="test/vector" pidx="0" name="bg3" fh="0" fv="0" gc="1" cr="0" cp="0 0" rbp="1" />
+    <Bone idx="10" gfx="missingimage" pidx="0" name="eye1" fh="0" fv="0" gc="0" cr="0" cp="0 0" prt="0 octostare" />
+    <Bone idx="11" gfx="missingimage" pidx="0" name="eye2" fh="0" fv="0" gc="0" cr="0" cp="0 0" prt="0 octostare" />
+    <Bone idx="12" gfx="mineoctoboss/armwrap" pidx="0" name="bg3" fh="0" fv="0" gc="1" cr="0" cp="0 0" rbp="1" />
+    <Bone idx="14" gfx="mineoctoboss/armwrap-squeeze" pidx="12" name="" fh="0" fv="0" gc="1" cr="0" cp="0 0" rbp="0" />
+    <Bone idx="13" gfx="mineoctoboss/kuirlintrapped" pidx="12" name="bg3" fh="0" fv="0" gc="1" cr="0" cp="0 0" rbp="1" />
+</Bones>
+<Animations>
+    <Animation name="idle">
+        <Key cmd="10 AC_PRT_STOP 0 11 AC_PRT_STOP 0" e="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 -39 53 191 0 2 -37 57 183 0 3 7 58 174 0 4 56 59 169 0 5 -7 58 181 0 6 29 59 170 0 7 -57 55 191 0 10 31 13 0 0 11 -48 13 0 0 12 -124 97 4 0 13 0 0 0 0 " />
+    </Animation>
+    <Animation name="stare">
+        <Key cmd="10 AC_PRT_START 0 11 AC_PRT_START 0" e="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 -39 53 191 0 2 -37 57 183 0 3 7 58 174 0 4 56 59 169 0 5 -7 58 181 0 6 29 59 170 0 7 -57 55 191 0 10 31 13 0 0 11 -48 13 0 0 12 -124 97 4 0 13 0 0 0 0 " />
+    </Animation>
+</Animations>

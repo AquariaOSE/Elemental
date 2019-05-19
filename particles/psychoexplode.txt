@@ -1,0 +1,30 @@
+EmitterLife = 0.3
+[Emitter]
+Texture = particles/zaps
+Blend = Add
+Shape = Point
+Width = 70
+Height = 70
+Life = 0.5
+RandomRotationRange = 360
+RandomVelocityMagnitude = 10
+SpawnLocal = 1
+[Number]
+0 20
+[Alpha]
+0 0
+0.05 1
+0.5 1
+1.0 0
+[Scale]
+0 1.4 1.4
+1 6.5 6.5
+[Color]
+0.1 1   0    0
+0.2 0.5 0.75 0.1
+0.3 0   0.5  0.5
+0.4 0   1    0.9
+0.5 0   0    1
+0.6 0.3 0.75 0.1
+0.7 0.6 0.5  0.5
+1   1   0   0.9
