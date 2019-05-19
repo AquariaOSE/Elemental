@@ -1,4 +1,7 @@
-dofile("scripts/entities/entityinclude.lua")
+--FG TODO
+
+if not v then v = {} end
+if not AQUARIA_VERSION then dofile("scripts/entities/entityinclude.lua") end
 
 function init(me)
 	setupEntity(me)

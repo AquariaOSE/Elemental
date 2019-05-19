@@ -1,8 +1,14 @@
+--FG TODO
+
 -- ================================================================================================
 -- based on ENERGY ORB
 -- ================================================================================================
 
-dofile("scripts/entities/entityinclude.lua")
+if not v then v = {} end
+if not AQUARIA_VERSION then dofile("scripts/entities/entityinclude.lua") end
+
+v.map = "airflip"
+
 charge = 0
 delay = 1
 
@@ -19,7 +25,6 @@ function init(me)
 	entity_setWeight(me, 200)
 	entity_setCollideRadius(me, 32)
 	entity_setAffectedBySpells(me, 1)
-	entity_setName(me, "goldorb")
 	
 	entity_setMaxSpeed(me, 450)
 	--entity_setMaxSpeed(me, 600)

@@ -1,8 +1,12 @@
+--FG TODO
+
 -- ================================================================================================
 -- ENERGY ORB
 -- ================================================================================================
 
-dofile("scripts/entities/entityinclude.lua")
+if not v then v = {} end
+if not AQUARIA_VERSION then dofile("scripts/entities/entityinclude.lua") end
+
 charge = 0
 delay = 1
 

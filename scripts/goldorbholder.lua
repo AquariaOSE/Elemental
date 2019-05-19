@@ -1,5 +1,8 @@
+--FG TODO
+
 -- orb holder
-dofile("scripts/entities/entityinclude.lua")
+if not v then v = {} end
+if not AQUARIA_VERSION then dofile("scripts/entities/entityinclude.lua") end
 
 energyOrb = 0
 openedDoors = false

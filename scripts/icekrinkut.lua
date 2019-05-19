@@ -1,8 +1,11 @@
+--FG TODO
+
 -- ================================================================================================
 -- based on SPOOTER (ICE  SCOOTER)
 -- ================================================================================================
 
-dofile("scripts/entities/entityinclude.lua")
+if not v then v = {} end
+if not AQUARIA_VERSION then dofile("scripts/entities/entityinclude.lua") end
 -- specific
 STATE_JUMP				= 1000
 STATE_TRANSITION		= 1001

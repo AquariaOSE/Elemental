@@ -1,8 +1,11 @@
+--FG TODO
+
 -- ================================================================================================
 -- C E L L   G E N E R A T O R
 -- ================================================================================================
 
-dofile("scripts/entities/entityinclude.lua")
+if not v then v = {} end
+if not AQUARIA_VERSION then dofile("scripts/entities/entityinclude.lua") end
 
 -- ================================================================================================
 -- L O C A L  V A R I A B L E S 

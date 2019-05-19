@@ -1,8 +1,11 @@
+--FG TODO
+
 -- ================================================================================================
 -- based on FireKrinkut and BLASTER
 -- ================================================================================================
 
-dofile("scripts/entities/entityinclude.lua")
+if not v then v = {} end
+if not AQUARIA_VERSION then dofile("scripts/entities/entityinclude.lua") end
 
 -- entity specific
 STATE_FIRE				= 1000

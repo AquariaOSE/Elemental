@@ -1,6 +1,9 @@
+--FG TODO
+
 -- based on priestbrain
 
-dofile("scripts/entities/entityinclude.lua")
+if not v then v = {} end
+if not AQUARIA_VERSION then dofile("scripts/entities/entityinclude.lua") end
 
 n = 0
 started = false

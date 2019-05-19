@@ -1,8 +1,11 @@
+--FG TODO
+
 -- ================================================================================================
 -- B L A S T E R
 -- ================================================================================================
 
-dofile("scripts/entities/entityinclude.lua")
+if not v then v = {} end
+if not AQUARIA_VERSION then dofile("scripts/entities/entityinclude.lua") end
 
 -- entity specific
 STATE_FIRE				= 1000

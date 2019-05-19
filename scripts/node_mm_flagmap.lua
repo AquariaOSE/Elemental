@@ -1,14 +1,17 @@
---dofile("scripts/entities/entityinclude.lua")
+if not v then v = {} end
+if not AQUARIA_VERSION then dofile("scripts/entities/entityinclude.lua") end
+
 dofile(appendUserDataPath("_mods/Elemental/scripts/mm_common.lua"))
 
-timer = 0
+v.spawnEntity = "mm_minimapper"
 
 function init(me)
 	node_setCursorActivation(me, false)
-	thisMap = 0
+	local thisMap
+    local mapArr = v.mapArr
 	
 	-- Search mapArr for the map's name
-	thisMapName = string.lower(getMapName())
+	local thisMapName = string.lower(getMapName())
 	for i,list in ipairs(mapArr) do
 		if string.lower(list[1]) == thisMapName then
 			thisMap = i 
@@ -17,13 +20,13 @@ function init(me)
 	end
 	
 	-- Update "map seen" flag
-	if getFlag(mapArr[thisMap][7]) == 0 then
+	if thisMap and getFlag(mapArr[thisMap][7]) == 0 then
 		setFlag(mapArr[thisMap][7], 1)
 		--centerText(mapArr[thisMap][8])
 	end
 	
 	--Create minimapper entity
-	createEntity("mm_Minimapper", "", entity_getPosition(getNaija()))
+	createEntity(v.spawnEntity, "", entity_getPosition(getNaija()))
 end
 
 

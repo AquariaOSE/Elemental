@@ -1,6 +1,10 @@
+--FG TODO
+
 dofile("scripts/entities/entityinclude.lua")
 dofile(appendUserDataPath("_mods/Elemental/scripts/flags.lua"))
 dofile(appendUserDataPath("_mods/Elemental/scripts/mm_common.lua"))
+
+v.flipY = 1 -- or -1 in mm_minimapperflip.lua
 
 mapActive = false -- Flag indicating whether the minimap is in view.
 mouseDown = false -- Flag indicating that the left mouse button was pressed last tick.
@@ -151,7 +155,7 @@ function drawMap()
 	-- Place the Naija gem at the correct location
 	if naijaGem ~= 0 then
 		quad_setPosition(naijaGem, cX + ngX * mapZoom + offsetX * mapSpeed,
-		                           cY + ngY * mapZoom + offsetY * mapSpeed)
+		                           cY + (ngY * mapZoom) * v.flipY + offsetY * mapSpeed)
 	end
 end
 

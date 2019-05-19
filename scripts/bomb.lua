@@ -1,8 +1,11 @@
+--FG TODO
+
 -- ================================================================================================
 -- based on Merman Thin and mantis bomb
 -- ================================================================================================
 
-dofile("scripts/entities/entityinclude.lua")
+if not v then v = {} end
+if not AQUARIA_VERSION then dofile("scripts/entities/entityinclude.lua") end
 
 swimTime = 0
 swimTimer = swimTime - swimTime/4

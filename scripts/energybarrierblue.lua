@@ -1,5 +1,8 @@
+--FG TODO
+
 -- based on energy barrier
-dofile("scripts/entities/entityinclude.lua")
+if not v then v = {} end
+if not AQUARIA_VERSION then dofile("scripts/entities/entityinclude.lua") end
 
 init_x = 0
 init_y = 0

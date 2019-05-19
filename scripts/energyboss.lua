@@ -1,6 +1,8 @@
+--FG TODO
 -- based on hellbeast
 
-dofile("scripts/entities/entityinclude.lua")
+if not v then v = {} end
+if not AQUARIA_VERSION then dofile("scripts/entities/entityinclude.lua") end
 
 bone_tongue = 0
 bone_hand = 0
