@@ -1,5 +1,3 @@
---FG TODO
-
 -- ================================================================================================
 -- based on FireKrinkut and BLASTER
 -- ================================================================================================
@@ -8,12 +6,12 @@ if not v then v = {} end
 if not AQUARIA_VERSION then dofile("scripts/entities/entityinclude.lua") end
 
 -- entity specific
-STATE_FIRE				= 1000
-STATE_PULLBACK			= 1001
-fireDelay = 0
-motherChance = 10
-soundDelay = 0
- 
+local STATE_FIRE				= 1000
+local STATE_PULLBACK			= 1001
+
+v.fireDelay = 0
+
+
 -- ================================================================================================
 -- FUNCTIONS
 -- ================================================================================================
@@ -53,10 +51,10 @@ function update(me, dt)
 			end
 		end
 		
-		if fireDelay > 0 then
-			fireDelay = fireDelay - dt
-			if fireDelay < 0 then
-				fireDelay = 0
+		if v.fireDelay > 0 then
+			v.fireDelay = v.fireDelay - dt
+			if v.fireDelay < 0 then
+				v.fireDelay = 0
 			end
 		end
 		
@@ -66,7 +64,7 @@ function update(me, dt)
 			else
 				if entity_isTargetInRange(me, 1600) then				
 					entity_moveTowardsTarget(me, dt, 400)		-- move in if we're too far away
-					if entity_isTargetInRange(me, 350) and fireDelay==0 then
+					if entity_isTargetInRange(me, 350) and v.fireDelay==0 then
 						entity_setState(me, STATE_FIRE, 0.5)
 					end
 				end
@@ -98,15 +96,13 @@ end
 
 function enterState(me)
 	if entity_getState(me)==STATE_IDLE then
-		fireDelay = 2
+		v.fireDelay = 2
 		entity_setMaxSpeed(me, 500)
 	elseif entity_getState(me)==STATE_FIRE then
 		entity_setMaxSpeed(me, 600)
-		s = createShot("infpoison", me, entity_getTarget(me))
+		local s = createShot("infpoison", me, entity_getTarget(me))
 		shot_setOut(s, 32)
 	elseif entity_getState(me)==STATE_PULLBACK then
-		if chance(50) then
-		end
 		entity_setMaxSpeed(me, 650)
 	end
 end
@@ -120,11 +116,6 @@ function exitState(me)
 end
 
 function hitSurface(me)
-end
-
-function activate(me)
-	msg1("Naija: Pet!")
-	entity_setBehaviorType(me, BT_ACTIVEPET)
 end
 
 function damage(me, attacker, bone, damageType, dmg)

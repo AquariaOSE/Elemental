@@ -8,8 +8,8 @@ if not v then v = {} end
 if not AQUARIA_VERSION then dofile("scripts/entities/entityinclude.lua") end
 
 -- specific
-STATE_JUMP				= 1000
-STATE_TRANSITION		= 1001
+local STATE_JUMP				= 1000
+local STATE_TRANSITION		= 1001
 
 -- ================================================================================================
 -- L O C A L  V A R I A B L E S 

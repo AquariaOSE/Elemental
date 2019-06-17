@@ -1,13 +1,9 @@
---FG TODO
-
 -- based on gateway
 
 if not v then v = {} end
 if not AQUARIA_VERSION then dofile("scripts/entities/entityinclude.lua") end
 
-n = 0
-t = 0
-b = 0
+v.b = 0
 
 function init(me)
 	setupBasicEntity(
@@ -31,10 +27,10 @@ function init(me)
 	
 	entity_setEntityLayer(me, -2)
 	
-	b = entity_getNearestNode(me, "gatewayblock")
-	if b ~= 0 and node_isEntityIn(b, me) then
+	v.b = entity_getNearestNode(me, "gatewayblock")
+	if v.b ~= 0 and node_isEntityIn(v.b, me) then
 	else
-		b = 0
+		v.b = 0
 	end
 	
 	entity_scale(me, 1.5, 1.5)
@@ -48,24 +44,25 @@ end
 
 function postInit(me)
 	n = getNaija()
-	entity_setTarget(me, n)
+	entity_setTarget(me, getNaija())
 end
 
 function update(me, dt)
+    local n = getNaija()
 	--entity_updateMovement(me, dt)
 	
 	entity_handleShotCollisionsSkeletal(me)
 	
-	if b ~= 0 then
-		if node_isEntityIn(b, n) then
-			xd = entity_x(n) - node_x(b)
+	if v.b ~= 0 then
+		if node_isEntityIn(v.b, n) then
+			xd = entity_x(n) - node_x(v.b)
 			yd = 0
 			entity_touchAvatarDamage(me, 0, 0, 0, 0)
 			avatar_fallOffWall()
 		end
 	end
 		
-	bone = entity_collideSkeletalVsCircle(me, n)
+	local bone = entity_collideSkeletalVsCircle(me, n)
 	if bone ~= 0 then
 		entity_clearVel(n)
 		if entity_x(n) > entity_x(me) then

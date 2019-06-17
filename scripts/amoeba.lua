@@ -20,7 +20,7 @@ v.velx = 0
 v.waveDir = 1
 v.waveTimer = 0
 v.soundDelay = 0
-v.glows = nil
+v.glows = false -- table
 v.laughed = false
 
 v.n = 0
@@ -61,12 +61,12 @@ function init(me)
 		
 	doIdleScale(me)
 
-   	 if chance(50) then
-       	 	entity_rotate(me, 360, 20, -1, 1)
-   	 else
-        	entity_rotate(me, 360)
-        	entity_rotate(me, 0, 20, -1, 1)
-    	end
+   	if chance(50) then
+       	 entity_rotate(me, 360, 20, -1, 1)
+   	else
+        entity_rotate(me, 360)
+        entity_rotate(me, 0, 20, -1, 1)
+    end
 	
 	entity_exertHairForce(me, 0, 400, 1)
 		

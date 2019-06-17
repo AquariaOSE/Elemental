@@ -1,4 +1,10 @@
---FG TODO
+v = v or {}
+
+if AQUARIA_VERSION then
+    return -- newer versions don't need a minimap replacement
+end
+
+-- OLD VERSION CODE AHREAD
 
 dofile("scripts/entities/entityinclude.lua")
 dofile(appendUserDataPath("_mods/Elemental/scripts/flags.lua"))

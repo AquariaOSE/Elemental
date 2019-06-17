@@ -11,7 +11,7 @@ if not AQUARIA_VERSION then dofile("scripts/entities/entityinclude.lua") end
 -- L O C A L  V A R I A B L E S 
 -- ================================================================================================
 
-delay = 1.0
+v.delay = 1.0
 
 -- ================================================================================================
 -- F U N C T I O N S
@@ -48,9 +48,10 @@ end
 
 function update(me, dt)
 
-	if delay > 0 then
-		delay = delay - dt
+	if v.delay > 0 then
+		v.delay = v.delay - dt
 	else
+        local ent
 		if not entity_hasTarget(me) then
 			entity_findTarget(me, 5000)
 			if entity_hasTarget(me) then
@@ -58,7 +59,7 @@ function update(me, dt)
 					ent = createEntity("firekrinkut", "", entity_x(me), entity_y(me))
 				end
 				entity_rotate(ent, entity_getRotation(me))
-				delay = math.random(3.0) + 3.0
+				v.delay = math.random(3.0) + 3.0
 			end
 		else
 			if chance(100) then
@@ -68,7 +69,7 @@ function update(me, dt)
 			entity_scale(ent, 0.8, 0.8, 0.3)
 			
 			entity_rotate(ent, entity_getRotation(me))
-			delay = math.random(3.0) + 3.0
+			v.delay = math.random(3.0) + 3.0
 		end
 	end
 end

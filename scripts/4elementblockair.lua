@@ -3,12 +3,7 @@
 if not v then v = {} end
 if not AQUARIA_VERSION then dofile("scripts/entities/entityinclude.lua") end
 
-
-
-
-
-
-
+v.b = 0
 
 function init(me)
 	setupBasicEntity(
@@ -34,32 +29,17 @@ function init(me)
     
 
     
-	b = entity_getNearestNode(me, "gatewayblock")
-	if b ~= 0 and node_isEntityIn(b, me) then
+	v.b = entity_getNearestNode(me, "gatewayblock")
+	if v.b ~= 0 and node_isEntityIn(v.b, me) then
 	else
-		b = 0
+		v.b = 0
 	end
 	
 	entity_scale(me, 1.5, 1.5)
 	
 	entity_generateCollisionMask(me)
 	
-
-	
 	entity_setCullRadius(me, 1024)
-
-    v.q = createQuad("Cell03", 13)
-    sc = sc * 1.1
-    quad_scale(v.q, sc, sc)
-    quad_setBlendType(v.q, BLEND_ADD)
-    quad_alpha(v.q, 0)
-    		 
-    v.q2 = createQuad("softglow-add", 13)
-    quad_scale(v.q2, 2.5, 2.5)
-    quad_setBlendType(v.q2, BLEND_ADD)
-    quad_alpha(v.q2, 0)
-    quad_color(v.q2, 0.5, 1, 0.5)
-
 end
 
 function postInit(me)
@@ -74,8 +54,8 @@ function update(me, dt)
 	
 	entity_handleShotCollisionsSkeletal(me)
 	
-	if b ~= 0 then
-		if node_isEntityIn(b, v.n) then
+	if v.b ~= 0 then
+		if node_isEntityIn(v.b, v.n) then
 			xd = 0
 			yd = entity_y(v.n) - node_y(b)
 			entity_touchAvatarDamage(me, 0, 0, 0, 0)

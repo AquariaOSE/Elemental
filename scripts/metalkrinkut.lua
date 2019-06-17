@@ -1,5 +1,3 @@
---FG TODO
-
 -- ================================================================================================
 -- based on WALKER   (alpha)
 -- ================================================================================================
@@ -11,11 +9,12 @@ if not AQUARIA_VERSION then dofile("scripts/entities/entityinclude.lua") end
 -- L O C A L   V A R I A B L E S 
 -- ================================================================================================
 
-moveTimer = 0
-n = 0
+v.moveTimer = 0
+v.n = 0
 
-seen = false
-sighTimer = 5
+v.seen = false
+v.sighTimer = 5
+v.bone_body = 0
 
 -- ================================================================================================
 -- F U N C T I O N S
@@ -43,7 +42,7 @@ function init(me)
 	entity_setDeathParticleEffect(me, "Explode")
 	
 	entity_initSkeletal(me, "MetalKrinkut")
-	bone_body = entity_getBoneByName(me, "Body")
+	v.bone_body = entity_getBoneByName(me, "Body")
 	entity_generateCollisionMask(me)
 	
 	entity_scale(me, 1.25, 1.25)
@@ -59,10 +58,10 @@ end
 function postInit(me)
 	entity_setState(me, STATE_IDLE)
 	
-	n = getNaija()
+	v.n = getNaija()
 	
 	-- FLIP WITH A FLIP NODE
-	node = entity_getNearestNode(me, "FLIP")
+	local node = entity_getNearestNode(me, "FLIP")
 	if node ~=0 then
 		if node_isEntityIn(node, me) then 
 			entity_fh(me)
@@ -73,27 +72,28 @@ end
 
 function update(me, dt)
 	-- NAIJA ATTACHING TO BODY
-	rideBone = entity_collideSkeletalVsCircle(me, n)
-	if rideBone == bone_body and avatar_isBursting() and entity_setBoneLock(n, me, rideBone) then
+	local rideBone = entity_collideSkeletalVsCircle(me, n)
+	if rideBone == v.bone_body and avatar_isBursting() and entity_setBoneLock(v.n, me, rideBone) then
 	elseif rideBone ~=0 then
-		vecX, vecY = entity_getVectorToEntity(me, n, 1000)
+		local vecX, vecY = entity_getVectorToEntity(me, n, 1000)
 		entity_addVel(n, vecX, vecY)
 	end
 	
 	-- emote
-	if entity_isEntityInRange(me, n, 512) then
-		if not seen then
+	if entity_isEntityInRange(me, v.n, 512) then
+		if not v.seen then
 			if chance(50) then
 				emote(EMOTE_NAIJAWOW)
 			else
 				emote(EMOTE_NAIJALAUGH)
 			end
+            v.seen = true
 		end
-		seen = true
-		sighTimer = sighTimer - dt
-		if sighTimer < 0 then
+
+		v.sighTimer = v.sighTimer - dt
+		if v.sighTimer < 0 then
 			emote(EMOTE_NAIJAGIGGLE)
-			sighTimer = 8 + math.random(4)
+			v.sighTimer = 8 + math.random(4)
 		end
 	end
 		

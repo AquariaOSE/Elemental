@@ -9,8 +9,8 @@ if not AQUARIA_VERSION then dofile("scripts/entities/entityinclude.lua") end
 
 v.map = "airflip"
 
-charge = 0
-delay = 1
+v.charge = 0
+v.delay = 1
 
 -- REMEMBER TO UPDATE ENERGYORBCRACKED WHEN CHANGING THIS FILE!
  
@@ -24,7 +24,7 @@ function init(me)
 	entity_setProperty(me, EP_MOVABLE, true)
 	entity_setWeight(me, 200)
 	entity_setCollideRadius(me, 32)
-	entity_setAffectedBySpells(me, 1)
+	--entity_setAffectedBySpells(me, 1)
 	
 	entity_setMaxSpeed(me, 450)
 	--entity_setMaxSpeed(me, 600)
@@ -54,12 +54,12 @@ function update(me, dt)
 	entity_updateCurrents(me)
 	
 	if not entity_isState(me, STATE_CHARGED) then
-		delay = delay - dt
-		if delay < 0 then
-			delay = 0.5
-			charge = charge - 1
-			if charge < 0 then
-				charge = 0
+		v.delay = v.delay - dt
+		if v.delay < 0 then
+			v.delay = 0.5
+			v.charge = v.charge - 1
+			if v.charge < 0 then
+				v.charge = 0
 			end
 		end
 	end
@@ -91,7 +91,7 @@ function damage(me, attacker, bone, damageType, dmg)
 		if damageType == DT_AVATAR_VINE or damageType == DT_AVATAR_ENERGYBLAST or damageType == DT_AVATAR_SHOCK  then
 			loadMap("Airflip")
 		end
-		if charge >= 10 then
+		if v.charge >= 10 then
 			playSfx("EnergyOrbCharge")
 			spawnParticleEffect("EnergyOrbCharge", entity_x(me), entity_y(me))
 			entity_setState(me, STATE_CHARGED)

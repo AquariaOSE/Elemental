@@ -1,6 +1,14 @@
+-- note: this script is included elsewhere so we need v to exist
 if not v then v = {} end
-if not AQUARIA_VERSION then dofile("scripts/entities/entityinclude.lua") end
 
+-- this script is only needed for very old versions that don't expose a version
+if AQUARIA_VERSION then
+    function init() end -- dummy
+    update = init
+    return
+end
+
+dofile("scripts/entities/entityinclude.lua")
 dofile(appendUserDataPath("_mods/Elemental/scripts/mm_common.lua"))
 
 v.spawnEntity = "mm_minimapper"

@@ -1,5 +1,3 @@
-dofile("scripts/entities/entityinclude.lua")
-
 function init()
-	loadMap("Start")
+	loadMap("start")
 end

@@ -1,15 +1,13 @@
---FG TODO
-
 -- based on forestsprite
 
 if not v then v = {} end
 if not AQUARIA_VERSION then dofile("scripts/entities/entityinclude.lua") end
 
-n = 0
+local STATE_SLEEP				= 1000
+local STATE_DANCE				= 1001
 
 
-STATE_SLEEP				= 1000
-STATE_DANCE				= 1001
+v.seen = false
 
 function init(me)
 	setupEntity(me)
@@ -27,7 +25,7 @@ function init(me)
 end
 
 function postInit(me)
-	node = entity_getNearestNode(me, "DANCE")
+	local node = entity_getNearestNode(me, "DANCE")
 	if node ~= 0 and node_isEntityIn(node, me) then
 		entity_setState(me, STATE_DANCE, -1, 1)
 	else
@@ -36,11 +34,8 @@ function postInit(me)
 			entity_setState(me, STATE_SLEEP, -1, 1)
 		end
 	end
-	n = getNaija()
-	entity_setTarget(me, n)
+	entity_setTarget(me, getNaija())
 end
-
-seen = false
 
 function update(me, dt)
 	if entity_isState(me, STATE_IDLE) then
@@ -49,8 +44,8 @@ function update(me, dt)
 		entity_flipToVel(me)
 	end
 	
-	if entity_isState(me, STATE_SLEEP) and entity_isEntityInRange(me, n, 700) and not seen then
-		seen = true
+	if entity_isState(me, STATE_SLEEP) and entity_isEntityInRange(me, getNaija(), 700) and not v.seen then
+		v.seen = true
 		emote(EMOTE_NAIJAGIGGLE)
 	end
 end

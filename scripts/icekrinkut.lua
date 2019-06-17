@@ -6,21 +6,22 @@
 
 if not v then v = {} end
 if not AQUARIA_VERSION then dofile("scripts/entities/entityinclude.lua") end
+
 -- specific
-STATE_JUMP				= 1000
-STATE_TRANSITION		= 1001
+local STATE_JUMP				= 1000
+local STATE_TRANSITION		= 1001
 
 -- ================================================================================================
 -- L O C A L  V A R I A B L E S 
 -- ================================================================================================
 
-jumpDelay = 0
-moveTimer = 0
-rotateOffset = 0
-hungry = true
-fedTime = 0
-eatTime = 0
-eating = 0
+v.jumpDelay = 0
+v.moveTimer = 0
+v.rotateOffset = 0
+v.hungry = true
+v.fedTime = 0
+v.eatTime = 0
+v.eating = 0
 
 -- ================================================================================================
 -- FUNCTIONS

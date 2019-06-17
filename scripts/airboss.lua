@@ -5,9 +5,9 @@ if not AQUARIA_VERSION then dofile("scripts/entities/entityinclude.lua") end
 dofile(appendUserDataPath("_mods/Elemental/scripts/flags.lua"))
 
 -- entity specific
-STATE_SOMETHING			= 1000
-STATE_SUCK				= 1001
-STATE_BLOW				= 1002
+local STATE_SOMETHING			= 1000
+local STATE_SUCK				= 1001
+local STATE_BLOW				= 1002
  
 started = false
 chaseDelay = 0

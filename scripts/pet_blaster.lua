@@ -27,8 +27,6 @@ local STATE_ATTACK			= 1001
 
 v.lungeDelay = 0
 
-v.spinDir = -1
-
 v.rot = 0
 v.rot2 = 0
 v.shotDrop = 0
@@ -127,7 +125,6 @@ function update(me, dt)
 		local y = 0
 		if avatar_isRolling() then
 			dist = 90
-			v.spinDir = -avatar_getRollDirection()
 			t = v.rot * 6.28
 			t2 = v.rot2 * 6.28
 		else

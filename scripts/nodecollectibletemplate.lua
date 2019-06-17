@@ -1,6 +1,8 @@
 if not v then v = {} end
 if not AQUARIA_VERSION then dofile("scripts/entities/entityinclude.lua") end
 
+dofile(appendUserDataPath("_mods/Elemental/scripts/flags.lua"))
+
 v.done = false
 
 function v.commonUpdate(me, object, flag)

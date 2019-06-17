@@ -1,5 +1,3 @@
---FG TODO
-
 -- ================================================================================================
 -- Based on JELLYSHOCK
 -- ================================================================================================
@@ -12,33 +10,33 @@ if not AQUARIA_VERSION then dofile("scripts/entities/entityinclude.lua") end
 -- L O C A L  V A R I A B L E S 
 -- ================================================================================================
 
-blupTimer = 0
-dirTimer = 0
-blupTime = 3.0
+v.blupTimer = 0
+v.dirTimer = 0
+v.blupTime = 3.0
 
 
-STATE_SHOCK			= 1000
+local STATE_SHOCK			= 1000
 
 -- ================================================================================================
 -- FUNCTIONS
 -- ================================================================================================
-sz = 1.0
-dir = 0
+v.sz = 1.0
+v.dir = 0
 
-MOVE_STATE_UP = 0
-MOVE_STATE_DOWN = 1
+local MOVE_STATE_UP = 0
+local MOVE_STATE_DOWN = 1
 
-moveState = 0
-moveTimer = 0
-velx = 0
-waveDir = 1
-waveTimer = 0
-soundDelay = 0
-shockDelay = 5
+v.moveState = 0
+v.moveTimer = 0
+v.velx = 0
+v.waveDir = 1
+v.waveTimer = 0
+v.soundDelay = 0
+v.shockDelay = 5
 
-collisionSegs = 28
+v.collisionSegs = 28
 
-function doIdleScale(me)	
+local function doIdleScale(me)	
 	entity_scale(me, 1.0*sz, 0.75*sz, blupTime, -1, 1, 1)
 end
 
@@ -71,7 +69,7 @@ function init(me)
 	entity_setState(me, STATE_IDLE)
 	entity_setDropChance(me, 50)
 	
-	entity_scale(me, 0.75*sz, 1*sz)
+	entity_scale(me, 0.75*v.sz, 1*v.sz)
 	doIdleScale(me)
 	
 	entity_exertHairForce(me, 0, 400, 1)
@@ -81,17 +79,18 @@ end
 
 function update(me, dt)
 	dt = dt * 1.5
+    local n = getNaija()
 	if true then
-		if avatar_isBursting() or entity_getRiding(getNaija())~=0 then
-			e = entity_getRiding(getNaija())
+		if avatar_isBursting() or entity_getRiding(n)~=0 then
+			local e = entity_getRiding(n)
 			if entity_touchAvatarDamage(me, 128, 0, 400) then
 				if e~=0 then
-					x,y = entity_getVectorToEntity(me, e)
+					local x,y = entity_getVectorToEntity(me, e)
 					x,y = vector_setLength(x, y, 25)
 					entity_addVel(e, x, y)
 				end
-				len = 500
-				x,y = entity_getVectorToEntity(getNaija(), me)
+				local len = 500
+				local x,y = entity_getVectorToEntity(n, me)
 				x,y = vector_setLength(x, y, len)
 				entity_push(me, x, y, 0.01, len, 0)
 				entity_sound(me, "JellyBlup", 800)
@@ -105,40 +104,38 @@ function update(me, dt)
 	entity_handleShotCollisions(me)
 	
 	--[[
-	if entity_collideHairVsCircle(me, getNaija(), collisionSegs) then
+	if entity_collideHairVsCircle(me, n, v.collisionSegs) then
 		entity_touchAvatarDamage(me, 0, 0, 800)
 	end
 	]]--
 	
-	sx,sy = entity_getScale(me)
-		
-	moveTimer = moveTimer - dt
-	if moveTimer < 0 then
-		if moveState == MOVE_STATE_DOWN then		
-			moveState = MOVE_STATE_UP
+	v.moveTimer = v.moveTimer - dt
+	if v.moveTimer < 0 then
+		if v.moveState == MOVE_STATE_DOWN then		
+			v.moveState = MOVE_STATE_UP
 			entity_setMaxSpeedLerp(me, 1.5, 0.2)
 			entity_scale(me, 0.75, 1, 1, 1, 1)
-			moveTimer = 3 + math.random(200)/100.0
+			v.moveTimer = 3 + math.random(200)/100.0
 			entity_sound(me, "JellyBlup")
-		elseif moveState == MOVE_STATE_UP then
-			velx = math.random(400)+100
+		elseif v.moveState == MOVE_STATE_UP then
+			v.velx = math.random(400)+100
 			if math.random(2) == 1 then
-				velx = -velx
+				v.velx = -v.velx
 			end
-			moveState = MOVE_STATE_DOWN
+			v.moveState = MOVE_STATE_DOWN
 			doIdleScale(me)
 			entity_setMaxSpeedLerp(me, 1, 1)
-			moveTimer = 5 + math.random(200)/100.0 + math.random(3)
+			v.moveTimer = 5 + math.random(200)/100.0 + math.random(3)
 		end
 	end
 	
-	waveTimer = waveTimer + dt
-	if waveTimer > 2 then
-		waveTimer = 0
-		if waveDir == 1 then
-			waveDir = -1
+	v.waveTimer = v.waveTimer + dt
+	if v.waveTimer > 2 then
+		v.waveTimer = 0
+		if v.waveDir == 1 then
+			v.waveDir = -1
 		else
-			waveDir = 1
+			v.waveDir = 1
 		end
 	end
 	
@@ -146,7 +143,7 @@ function update(me, dt)
 	--entity_exertHairForce(me, entity_velx(me), entity_vely(me), dt, -1)
 	
 	if moveState == MOVE_STATE_UP then
-		entity_addVel(me, velx*dt, -600*dt)
+		entity_addVel(me, v.velx*dt, -600*dt)
 		entity_rotateToVel(me, 1)
 		--entity_exertHairForce(me, waveTimer*5*waveDir, 0, dt)	
 		--entity_exertHairForce(me, 0, 10, dt)
@@ -170,12 +167,12 @@ function update(me, dt)
 		entity_updateMovement(me, dt)
 	end
 	
-	entity_setHairHeadPosition(me, entity_x(me), entity_y(me))
+	entity_setHairHeadPosition(me, entity_getPosition(me))
 	entity_updateHair(me, dt)
 
-	shockDelay = shockDelay - dt
-	if shockDelay < 0 then
-		shockDelay = 10 + math.random(5)
+	v.shockDelay = v.shockDelay - dt
+	if v.shockDelay < 0 then
+		v.shockDelay = 10 + math.random(5)
 		entity_setState(me, STATE_SHOCK, 0.5)
 	end
 end
@@ -189,7 +186,7 @@ function enterState(me)
 		--entity_animate(me, "idle", LOOP_INF)
 	elseif entity_isState(me, STATE_SHOCK) then
 		entity_sound(me, "EnergyOrbCharge")
-		spawnParticleEffect("JellyShock", entity_x(me), entity_y(me))		
+		spawnParticleEffect("JellyShock", entity_getPosition(me))
 	end
 end
 
@@ -205,6 +202,6 @@ end
 
 function dieNormal(me)
 	if chance(100) then
-		spawnIngredient("SpicyMeat", entity_x(me), entity_y(me))
+		spawnIngredient("SpicyMeat", entity_getPosition(me))
 	end
 end

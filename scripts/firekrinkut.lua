@@ -8,8 +8,9 @@ if not v then v = {} end
 if not AQUARIA_VERSION then dofile("scripts/entities/entityinclude.lua") end
 
 -- entity specific
-STATE_FIRE				= 1000
-STATE_PULLBACK			= 1001
+local STATE_FIRE				= 1000
+local STATE_PULLBACK			= 1001
+
 fireDelay = 0
 motherChance = 10
 soundDelay = 0
